@@ -7,19 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040AEACB262660CD00E68C1A /* face_keras_500.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 040AEACA262660CD00E68C1A /* face_keras_500.tflite */; };
 		0434032925B7BE41005C0C69 /* FaceRecognitionAppTFApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0434032825B7BE41005C0C69 /* FaceRecognitionAppTFApp.swift */; };
 		0434032B25B7BE41005C0C69 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0434032A25B7BE41005C0C69 /* ContentView.swift */; };
 		0434032D25B7BE48005C0C69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0434032C25B7BE48005C0C69 /* Assets.xcassets */; };
 		0434033025B7BE48005C0C69 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0434032F25B7BE48005C0C69 /* Preview Assets.xcassets */; };
+		048D213725BCF30F00E85EC6 /* ModelHandlerTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D213625BCF30F00E85EC6 /* ModelHandlerTF.swift */; };
+		04AF94BF25C7461700BC83A0 /* AverageMaximumSuppression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF94BE25C7461700BC83A0 /* AverageMaximumSuppression.swift */; };
+		04D4A02625BA58050038E347 /* CVPixelBufferExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D4A02525BA58050038E347 /* CVPixelBufferExtension.swift */; };
+		F101DFC1D46E1F294B3B7A76 /* Pods_FaceRecognitionAppTF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAB7CF1D3D02E9F7804ADB8 /* Pods_FaceRecognitionAppTF.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		040AEACA262660CD00E68C1A /* face_keras_500.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = face_keras_500.tflite; sourceTree = "<group>"; };
 		0434032525B7BE41005C0C69 /* FaceRecognitionAppTF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceRecognitionAppTF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0434032825B7BE41005C0C69 /* FaceRecognitionAppTFApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceRecognitionAppTFApp.swift; sourceTree = "<group>"; };
 		0434032A25B7BE41005C0C69 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0434032C25B7BE48005C0C69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0434032F25B7BE48005C0C69 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0434033125B7BE48005C0C69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		048D213625BCF30F00E85EC6 /* ModelHandlerTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelHandlerTF.swift; sourceTree = "<group>"; };
+		04AF94BE25C7461700BC83A0 /* AverageMaximumSuppression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageMaximumSuppression.swift; sourceTree = "<group>"; };
+		04D4A02525BA58050038E347 /* CVPixelBufferExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVPixelBufferExtension.swift; sourceTree = "<group>"; };
+		9129F4C091484EC87DC733DD /* Pods-FaceRecognitionAppTF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceRecognitionAppTF.release.xcconfig"; path = "Target Support Files/Pods-FaceRecognitionAppTF/Pods-FaceRecognitionAppTF.release.xcconfig"; sourceTree = "<group>"; };
+		EFAB7CF1D3D02E9F7804ADB8 /* Pods_FaceRecognitionAppTF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FaceRecognitionAppTF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3DC5D63FCB80D57A682F715 /* Pods-FaceRecognitionAppTF.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceRecognitionAppTF.debug.xcconfig"; path = "Target Support Files/Pods-FaceRecognitionAppTF/Pods-FaceRecognitionAppTF.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F101DFC1D46E1F294B3B7A76 /* Pods_FaceRecognitionAppTF.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		040AEAC9262660C000E68C1A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				040AEACA262660CD00E68C1A /* face_keras_500.tflite */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		0434031C25B7BE40005C0C69 = {
 			isa = PBXGroup;
 			children = (
 				0434032725B7BE41005C0C69 /* FaceRecognitionAppTF */,
 				0434032625B7BE41005C0C69 /* Products */,
+				DCF540EECBFDA6CAFE3BB3F0 /* Pods */,
+				D98AC05A4BAF608AEC85FAE4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,11 +75,15 @@
 		0434032725B7BE41005C0C69 /* FaceRecognitionAppTF */ = {
 			isa = PBXGroup;
 			children = (
+				040AEAC9262660C000E68C1A /* Model */,
 				0434032825B7BE41005C0C69 /* FaceRecognitionAppTFApp.swift */,
 				0434032A25B7BE41005C0C69 /* ContentView.swift */,
 				0434032C25B7BE48005C0C69 /* Assets.xcassets */,
 				0434033125B7BE48005C0C69 /* Info.plist */,
 				0434032E25B7BE48005C0C69 /* Preview Content */,
+				04D4A02525BA58050038E347 /* CVPixelBufferExtension.swift */,
+				048D213625BCF30F00E85EC6 /* ModelHandlerTF.swift */,
+				04AF94BE25C7461700BC83A0 /* AverageMaximumSuppression.swift */,
 			);
 			path = FaceRecognitionAppTF;
 			sourceTree = "<group>";
@@ -69,6 +96,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		D98AC05A4BAF608AEC85FAE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFAB7CF1D3D02E9F7804ADB8 /* Pods_FaceRecognitionAppTF.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCF540EECBFDA6CAFE3BB3F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F3DC5D63FCB80D57A682F715 /* Pods-FaceRecognitionAppTF.debug.xcconfig */,
+				9129F4C091484EC87DC733DD /* Pods-FaceRecognitionAppTF.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,6 +120,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0434033425B7BE48005C0C69 /* Build configuration list for PBXNativeTarget "FaceRecognitionAppTF" */;
 			buildPhases = (
+				9CE193BB98E25F3EC63B0AF7 /* [CP] Check Pods Manifest.lock */,
 				0434032125B7BE40005C0C69 /* Sources */,
 				0434032225B7BE40005C0C69 /* Frameworks */,
 				0434032325B7BE40005C0C69 /* Resources */,
@@ -126,6 +171,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				040AEACB262660CD00E68C1A /* face_keras_500.tflite in Resources */,
 				0434033025B7BE48005C0C69 /* Preview Assets.xcassets in Resources */,
 				0434032D25B7BE48005C0C69 /* Assets.xcassets in Resources */,
 			);
@@ -133,13 +179,41 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9CE193BB98E25F3EC63B0AF7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FaceRecognitionAppTF-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0434032125B7BE40005C0C69 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				048D213725BCF30F00E85EC6 /* ModelHandlerTF.swift in Sources */,
 				0434032B25B7BE41005C0C69 /* ContentView.swift in Sources */,
 				0434032925B7BE41005C0C69 /* FaceRecognitionAppTFApp.swift in Sources */,
+				04AF94BF25C7461700BC83A0 /* AverageMaximumSuppression.swift in Sources */,
+				04D4A02625BA58050038E347 /* CVPixelBufferExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +338,7 @@
 		};
 		0434033525B7BE48005C0C69 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3DC5D63FCB80D57A682F715 /* Pods-FaceRecognitionAppTF.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -286,6 +361,7 @@
 		};
 		0434033625B7BE48005C0C69 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9129F4C091484EC87DC733DD /* Pods-FaceRecognitionAppTF.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
